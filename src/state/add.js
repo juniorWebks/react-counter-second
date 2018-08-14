@@ -8,15 +8,12 @@ export const addAction = number =>({
 
 const initialState = {
     result: 0
-
 }
 
 // export const addAction = result => ({
 //     type:ADD,
 //     result
 // })
-
-
 
 export default (state = initialState, action) =>
 {
