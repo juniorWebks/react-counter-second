@@ -30,31 +30,31 @@ const getDisplayedVal = () => {
     return state.isResultShown ? state.result : state.input
 }
 
-store.dispatch(inputAction(6))
-if (getDisplayedVal() !== 6) {
-    throw new Error('Input not works! Should be 6!')
-}
-store.dispatch(inputAction(7))
-if (getDisplayedVal() !== 67) {
-    throw new Error('Input not works! Should be 67!')
-}
-store.dispatch(inputAction(3))
-if (getDisplayedVal() !== 673) {
-    throw new Error('Input not works! Should be 673!')
-}
+// store.dispatch(inputAction(6))
+// if (getDisplayedVal() !== 6) {
+//     throw new Error('Input not works! Should be 6!')
+// }
+// store.dispatch(inputAction(7))
+// if (getDisplayedVal() !== 67) {
+//     throw new Error('Input not works! Should be 67!')
+// }
+// store.dispatch(inputAction(3))
+// if (getDisplayedVal() !== 673) {
+//     throw new Error('Input not works! Should be 673!')
+// }
 
-store.dispatch(addAction())
-if (getDisplayedVal() !== 673) {
-    throw new Error('Add not works! Should be 673!')
-}
-store.dispatch(inputAction(3))
-if (getDisplayedVal() !== 3) {
-    throw new Error('Input not works! Should be 3!')
-}
-store.dispatch(addAction())
-if (getDisplayedVal() !== 676) {
-    throw new Error('Add not works! Should be 676!')
-}
+// store.dispatch(addAction())
+// if (getDisplayedVal() !== 673) {
+//     throw new Error('Add not works! Should be 673!')
+// }
+// store.dispatch(inputAction(3))
+// if (getDisplayedVal() !== 3) {
+//     throw new Error('Input not works! Should be 3!')
+// }
+// store.dispatch(addAction())
+// if (getDisplayedVal() !== 676) {
+//     throw new Error('Add not works! Should be 676!')
+// }
 //functions in window are only for manual testing
 
 window.inputAction = number => store.dispatch(inputAction(number))
